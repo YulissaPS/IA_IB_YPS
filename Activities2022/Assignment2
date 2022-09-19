@@ -1,0 +1,49 @@
+#Assignment No. 2: Python exercices
+Artificial Intelligence 
+Student: Yulissa Ponce Salazar 
+ID: 1894765
+Time: N4-N6
+
+
+#
+Exercise No.1 
+
+name = input("What's your name ?:")
+
+a = "Ana"
+b = "John"
+c = "Peter" 
+
+if name != a and name != b and name != c:
+  print(f"Hello {name}, how are you?")
+else:
+  print("Nothing")
+
+
+
+#Exercise No.2
+
+list = ["green", "yellow", "blue", "purple","rose", "red"]
+
+print(list[-1])
+
+list.reverse()
+print(list)
+
+list.reverse()
+print(list)
+
+
+
+
+#Exercice No.3
+
+def print_in_a_frame(*words):
+  size = max(len(word)for word in words)
+  print("*" * (size + 4))
+  for word in words:
+    print ('* {:<{}} *'.format(word,size))
+  print('*'*(size + 4))
+
+print_in_a_frame("I", "am", "Yulissa","and","I","love","tacos")
+
